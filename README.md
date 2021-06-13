@@ -23,4 +23,3 @@ Clone os arquivos de origem e navegue até o diretório raiz. Execute `npm insta
 - `npm run build:scss` compila o arquivo SCSS localizado em `src/scss/` para dentro do `dist`
 - `npm run clean` delete o diretório `dist` para preparar o rebuilding do projeto
 - `npm run start` executa o projeto, lança um live preview no navegador padrão e observa as alterações feitas nos arquivos em `src`
-

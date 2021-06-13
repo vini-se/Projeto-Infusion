@@ -1,8 +1,8 @@
 {
+  "title": "Projeto Infusion - Estudando e Aprimorando",
   "name": "projeto-infusion",
   "version": "1.0.0",
-  "description": "Just another project to improve my skills",
-  "main": "index.js",
+  "description": "Just another project to improve my skills.",
   "scripts": {
     "build": "npm run clean && npm run build:scss && npm run build:assets && npm run build:html && npm run build:scripts",
     "build:assets": "node scripts/build-assets.js",
@@ -12,9 +12,7 @@
     "clean": "node scripts/clean.js",
     "start": "npm run build && node scripts/start.js"
   },
-  "keywords": [],
   "author": "Vinicius",
-  "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "browser-sync": "^2.26.14",
