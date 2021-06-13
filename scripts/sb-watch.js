@@ -7,6 +7,7 @@ const renderAssets = require('./render-assets');
 const renderHTML = require('./render-html');
 // const renderPug = require('./render-pug');
 const renderSCSS = require('./render-scss');
+const renderScripts = require('./render-scripts');
 
 const watcher = chokidar.watch('src', {
     persistent: true,
@@ -28,7 +29,7 @@ watcher.on('ready', () => {
 _handleSCSS();
 
 function _processFile(filePath, watchEvent) {
-    
+
     // if (!READY) {
     //     if (filePath.match(/\.pug$/)) {
     //         if (!filePath.match(/includes/) && !filePath.match(/mixins/) && !filePath.match(/\/pug\/layouts\//)) {
@@ -41,13 +42,23 @@ function _processFile(filePath, watchEvent) {
 
     console.log(`### INFO: File event: ${watchEvent}: ${filePath}`);
 
-    if (filePath.match(/src\/.html\//)) {
-        return renderHTML();
+    if (filePath.match(/\.html/)) {
+        if (watchEvent === 'change') {
+            return _handleHTML(filePath, watchEvent);
+        }
+        return
     }
 
     if (filePath.match(/\.scss$/)) {
         if (watchEvent === 'change') {
             return _handleSCSS(filePath, watchEvent);
+        }
+        return;
+    }
+
+    if (filePath.match(/\.js/)) {
+        if (watchEvent === 'change') {
+            return _handleScripts(filePath, watchEvent);
         }
         return;
     }
@@ -77,6 +88,14 @@ function _processFile(filePath, watchEvent) {
 //     });
 // }
 
+function _handleHTML(){
+    renderHTML();
+}
+
 function _handleSCSS() {
     renderSCSS();
+}
+
+function _handleScripts() {
+    renderScripts();
 }
