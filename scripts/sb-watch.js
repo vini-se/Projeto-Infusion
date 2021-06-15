@@ -27,6 +27,7 @@ watcher.on('ready', () => {
 });
 
 _handleSCSS();
+_handleHTML();
 
 function _processFile(filePath, watchEvent) {
 
