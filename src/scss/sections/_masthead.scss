@@ -1,0 +1,16 @@
+.header {
+    background-color: #fff;
+    @include dflex(center, space-between);
+    height: 50px;
+    
+    .header__name {
+        @include dflex();
+        background-color: $primary-color;
+        height: 100%;
+        font-weight: bold;
+        width: 50%;
+        a {
+            color: white;
+        }
+    }
+}
