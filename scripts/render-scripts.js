@@ -8,9 +8,9 @@ module.exports = function renderScripts() {
     const destPath = upath.resolve(upath.dirname(__filename), '../dist/js/main.js');
 
     const destPathDirname = upath.dirname(destPath);
-    // if (!sh.test('-e', destPathDirname)) {
+    if (!sh.test('-e', destPathDirname)) {
         sh.mkdir('-p', destPathDirname);
-    // }
+    }
 
     sh.cp('-R', sourcePath, destPath);
 };
