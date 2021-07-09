@@ -11,10 +11,10 @@ $subheadings-font-family: $font-family-base;
 $headings-font-weight: 700;
 $headings-letter-spacing: 0.0625em;
 
-$primary-color: #5abaac;
-$lighten-pri: lighten($primary-color, 15%);
-$darken-pri: darken($primary-color, 15%);
+$primary: #5abaac;
+$lighten-pri: lighten($primary, 15%);
+$darken-pri: darken($primary, 15%);
 
-$secondary-color: #303434;
-$lighten-sec: lighten($secondary-color, 15%);
-$darken-sec: darken($secondary-color, 15%);
+$secondary: #303434;
+$lighten-sec: lighten($secondary, 15%);
+$darken-sec: darken($secondary, 15%);

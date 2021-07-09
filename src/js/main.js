@@ -5,5 +5,4 @@ $btn_hmbg.addEventListener('click', () => {
     $nav.classList.toggle('open');
     $btn_hmbg.classList.toggle('open');
 })
-    
 
