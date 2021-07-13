@@ -40,12 +40,12 @@ a {
 // Highlight color customization
 
 ::-moz-selection {
-    background: $primary-color;
+    background: $primary;
     text-shadow: none;
 }
 
 ::selection {
-    background: $primary-color;
+    background: $primary;
     text-shadow: none;
 }
 
