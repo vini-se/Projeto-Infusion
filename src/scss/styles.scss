@@ -7,5 +7,10 @@
 // Global CSS
 @import "./global.scss";
 
+// Import Components
+@import "./components/_nav.scss";
+@import "./components/_triangle.scss";
+@import "./components/_cards.scss";
+
 // Import mixins
 @import "./mixins.scss";
