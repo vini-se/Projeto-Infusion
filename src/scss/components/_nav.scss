@@ -1,0 +1,24 @@
+@media (min-width: 992px){
+    
+    a.navbar-brand.bg-primary.text-white{
+        padding-left: 10rem !important;
+        text-transform: uppercase;
+    }
+    
+    #navbarNav{
+        background-color: white !important;
+        
+        li{
+            border: none !important;
+
+            a{
+            color: $secondary !important;
+            transition: .3s ease;
+
+            &:hover{
+                color: $lighten-pri !important;
+            }
+            }
+        }
+    }
+}

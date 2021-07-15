@@ -1,0 +1,47 @@
+.container-card .card-people {
+    color: $secondary;
+    cursor: default;
+    // margin-left: calc(var(--bs-gutter-x) * 0.5);
+    // margin-right: calc(var(--bs-gutter-x) * 0.5);
+    // padding: 0;
+    text-align: center;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: $primary;
+        outline: 5px solid $primary;
+        outline-offset: -5px;
+
+        .card-people__carousel img {
+            transform: translateY(-50%);
+        }
+    }
+
+    .card-people__carousel {
+        margin: -55px auto;
+        width: 88px;
+        height: 88px;
+        overflow: hidden;
+
+        img {
+            transition: none !important;
+            transition-delay: 0.3s !important;
+        }
+    }
+
+    h2.card-title {
+        font-size: 21px;
+        margin: 2.9rem 0 1rem;
+    }
+
+    p.card-text {
+        font-size: 14px;
+    }
+}
+
+// @media (min-width: 992px) {
+//     .container-card .card-people.col-lg-3 {
+//         flex: 0 0 auto;
+//         width: calc(25% - calc(var(--bs-gutter-x) * 0.5) * 2);
+//     }
+// }
