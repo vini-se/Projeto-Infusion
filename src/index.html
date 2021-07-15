@@ -22,13 +22,14 @@
 
 <body>
 
+  <!-- Header -->
   <header>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light p-0">
 
-      <div class="container-fluid bg-white p-0">
+      <div class="container-fluid bg-white ps-0 header_logo">
 
-        <a class="navbar-brand bg-primary text-white p-3 m-0 fs-4 fw-bold" href="#"> INFUSION </a>
+        <a class="navbar-brand bg-primary text-white p-3 fs-4 fw-bold" href="#"> infusion </a>
 
         <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,16 +63,17 @@
     </nav>
   </header>
 
-  <section style="margin-top: 4rem;">
+  <!-- Title -->
+  <section>
 
-
-    <div style="height: 600px; background: url(./assets/images/01.jpg);" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center bg_triangle">
 
       <h1 class="bg-primary fs-2 p-4 text-white text-center">
         CUTTING EDGE <span class="border-bottom lh-lg">WP</span> BUSINESS THEME
       </h1>
 
-      <p class="bg-secondary p-4 text-white d-inline-block mt-3 mb-4">Gutful of bottlo no dramas he's got a massive hooroo.</p>
+      <p class="bg-secondary p-4 text-white d-inline-block mt-3 mb-4">Gutful of bottlo no dramas he's got a massive
+        hooroo.</p>
 
       <a href="#" class="btn btn-outline-light py-3 px-4">BUY IT NOW</a>
 
@@ -79,41 +81,105 @@
 
   </section>
 
+  <!-- Cards -->
+  <section>
+    <div class="container container-card">
+      <div class="row gx-5">
 
-  <!-- <section>
-          <article>               
+        <div class="col-lg-3 col-md-6 g-5">
+        <article class="card-people card lh-lg">
 
-            <img src="img/c01.jpg" alt="Carousel Img">
-            
-            <div>
-              <img src="img/teamsprite_01.png" alt="Carousel Img">
-            </div>
-            <div>
-              <h2>Lorem ipsum dolor sit amet consectetur</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.</p>
-            </div>
-          </article>            
-        </section>
-        
+          <img src="./assets/images/c01.jpg" class="card-img-top" alt="Carousel Img">
 
-        <section>
-          
-          <article>
-            <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>            
-            <a href="#">BUTTON</a>
-            <a href="#">BUTTON</a>
-          </article>
+          <div class="card-people__carousel">
+            <img src="./assets/images/teamsprite_01.png" alt="Carousel Img">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title fw-normal">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor.
+              Proin sed molestie massa.</p>
+          </div>
+        </article>
+      </div>
 
-          <article>
-            <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio.</p>
-            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vitae lectus erat. Duis consequat laoreet velit. Mauris convallis, sapien sit amet scelerisque accumsan, felis urna aliquet nunc, viverra mollis odio tellus a nisl. Nulla lobortis lectus non rutrum viverra. Sed et molestie libero. Sed ut ultrices dui.</p>
-          </article>  
-          
-        </section>
+      <div class="col-lg-3 col-md-6 g-5">  
+      <article class="card-people card lh-lg">
 
-        <section>
+          <img src="./assets/images/c02.jpg" class="card-img-top" alt="Carousel Img">
+
+          <div class="card-people__carousel">
+            <img src="./assets/images/teamsprite_02.png" alt="Carousel Img">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title fw-normal">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor.
+              Proin sed molestie massa.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-3 col-md-6 g-5">  
+      <article class="card-people card lh-lg">
+
+          <img src="./assets/images/c03.jpg" class="card-img-top" alt="Carousel Img">
+
+          <div class="card-people__carousel">
+            <img src="./assets/images/teamsprite_03.png" alt="Carousel Img">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title fw-normal">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor.
+              Proin sed molestie massa.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-lg-3 col-md-6 g-5">  
+      <article class="card-people card lh-lg">
+
+          <img src="./assets/images/c04.jpg" class="card-img-top" alt="Carousel Img">
+
+          <div class="card-people__carousel">
+            <img src="./assets/images/teamsprite_04.png" alt="Carousel Img">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title fw-normal">Lorem ipsum dolor sit amet consectetur</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor.
+              Proin sed molestie massa.</p>
+          </div>
+        </article>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--<section>
+
+    <article>
+      <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin
+        sed.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin
+        sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at
+        odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      <a href="#">BUTTON</a>
+      <a href="#">BUTTON</a>
+    </article>
+
+    <article>
+      <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin
+        sed.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin
+        sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at
+        odio.</p>
+      <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean vitae lectus erat. Duis consequat laoreet
+        velit. Mauris convallis, sapien sit amet scelerisque accumsan, felis urna aliquet nunc, viverra mollis odio
+        tellus a nisl. Nulla lobortis lectus non rutrum viverra. Sed et molestie libero. Sed ut ultrices dui.</p>
+    </article>
+
+  </section>
+
+   <section>
           <h2>Latest Articles</h2>
 
           <div>
