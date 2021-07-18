@@ -1,24 +1,34 @@
-@media (min-width: 992px){
-    
-    a.navbar-brand.bg-primary.text-white{
+@media (min-width: 992px) and (max-width: 1120px){
+    #navbarNav li a {
+        font-size: .8rem;
+    }
+}
+@media (min-width: 992px) {
+    a.navbar-brand.bg-primary.text-white {
         padding-left: 10rem !important;
         text-transform: uppercase;
     }
-    
-    #navbarNav{
+
+    #navbarNav {
         background-color: white !important;
-        
-        li{
+
+        li {
             border: none !important;
 
-            a{
-            color: $secondary !important;
-            transition: .3s ease;
+            a {
+                color: $secondary !important;
+            }
+        }
+    }
+}
 
-            &:hover{
-                color: $lighten-pri !important;
-            }
-            }
+@media (min-width: 576px) {
+    #navbarNav a {
+        color: $lighten-sec !important;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: $lighten-pri !important;
         }
     }
 }
