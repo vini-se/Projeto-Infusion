@@ -1,0 +1,51 @@
+section.gallery {
+
+    .gallery__title-container {
+        background-color: $primary;
+        padding: 1rem 0;
+
+        .gallery__title {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 1em;
+            padding-right: 1em;
+            max-width: 1060px;
+        }
+    }
+
+    .gallery__imgs-container {
+        background: yellow;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-auto-rows: auto;
+        grid-gap: 0;
+
+        @media screen and (min-width: 1024px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        a {
+            background-color: transparent;
+
+            img {
+                display: block;
+                
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .modal__gallery .modal-content{
+            position: relative;
+            width: initial;
+
+            .modal__close{
+                cursor: pointer;
+                position: absolute;
+                right: 14px;
+                top: 10px;
+            }
+        }
+
+    }
+}
