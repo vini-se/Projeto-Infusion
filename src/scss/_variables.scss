@@ -1,20 +1,44 @@
-$font-family-base: "Open Sans", "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base: "Open Sans", "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-$headings-font-family: "Open Sans", "Montserrat", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: "Open Sans", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $subheadings-font-family: $font-family-base;
 
 $headings-font-weight: 700;
 $headings-letter-spacing: 0.0625em;
 
-$primary: #5abaac;
-$lighten-pri: lighten($primary, 15%);
-$darken-pri: darken($primary, 15%);
+// theme-color-variables, my colors
+$primary: #5abaac !default;
+$secondary: #303434 !default;
 
-$secondary: #303434;
-$lighten-sec: lighten($secondary, 15%);
+$darken-pri: darken($primary, 15%);
 $darken-sec: darken($secondary, 15%);
+
+$lighten-pri: lighten($primary, 15%);
+$lighten-sec: lighten($secondary, 20%);
+
+// Default bootstrap
+$success: #198754 !default;
+$info: #0dcaf0 !default;
+$warning: #ffc107 !default;
+$danger: #dc3545 !default;
+$light: #f8f9fa !default;
+$dark: #212529 !default;
+
+// theme-colors-map
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "lighten-pri": $lighten-pri,
+    "darken-pri": $darken-pri,
+    "lighten-sec": $lighten-sec,
+    "darken-sec": $darken-sec,
+) !default;
