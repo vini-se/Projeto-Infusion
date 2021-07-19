@@ -14,7 +14,7 @@ const watcher = chokidar.watch('src', {
 
 let READY = false;
 
-process.title = 'pug-watch';
+process.title = 'watch';
 process.stdout.write('Loading');
 
 watcher.on('add', filePath => _processFile(upath.normalize(filePath), 'add'));
